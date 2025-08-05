@@ -25,7 +25,7 @@ blkid /dev/vda1
 So you see the type is ext4. Write that out to /root/fstype
 
 ```plain
-blkid /dev/vda1 > /root/fstype
+echo ext4 > /root/fstype
 ```{{exec}}
 
 Check the /etc/fstab to see how your system is mounting all it's partitions as it comes up.
