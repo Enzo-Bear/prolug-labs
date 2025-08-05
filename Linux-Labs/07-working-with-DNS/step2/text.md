@@ -45,7 +45,7 @@ Let's test a curl to www.google.com and see if we're still resolving to www.goog
 curl www.google.com | grep -Ei 'yahoo|google'
 ```{{exec}}
 
-Now we change the order so that our /etc/nsswitch entry for hosts shows dns before host values
+Now we change the order so that our /etc/nsswitch.conf entry for hosts shows dns before host values
 
 ```plain
 vi /etc/nsswitch.conf
